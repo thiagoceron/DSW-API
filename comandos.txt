@@ -1,0 +1,20 @@
+node -v
+npm init -y
+npm i typescript
+npm i ts-node-dev
+npm i -D @types/node
+npm i --save-dev tsconfig-paths
+tsc --init
+npm i 
+
+npm i express
+npm i cors
+npm i express-async-errors --force
+npm i -D @types/express --force
+
+npm i typeorm@0.2.45 --force
+npm i reflect-metadata pg --force
+
+docker run --name postgres2 -e POSTGRES_PASSWORD=docker -p 5433:5432 -d postgres
+
+npm run typeorm migration:create -- -n CreateProducts
