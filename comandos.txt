@@ -18,3 +18,30 @@ npm i reflect-metadata pg --force
 docker run --name postgres2 -e POSTGRES_PASSWORD=docker -p 5433:5432 -d postgres
 
 npm run typeorm migration:create -- -n CreateProducts
+
+npm i express@4.18.2 --force
+npm i celebrate 
+npm i -D @types/joi
+
+npm run typeorm migration:create -- -n CreateUsers
+npm run typeorm migration:run
+
+npm i bcryptjs
+npm i -D @types/bcryptjs
+
+npm i jsonwebtoken
+npm i -D @types/jsonwebtoken
+
+npm i multer
+npm i -D @types/multer
+
+npm run typeorm migrations:create -- -n CreateUserTokens
+npm run typeorm migration:run
+
+npm i date-fns
+
+npm i nodemailer
+npm i -D @types/nodemailer
+
+
+npm i handlebars
