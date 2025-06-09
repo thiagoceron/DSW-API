@@ -15,7 +15,7 @@ export default class ProfileController{
             }
         }
     
-        public async create(request: Request, response: Response, next: NextFunction) : Promise<Response | void>{
+        public async update(request: Request, response: Response, next: NextFunction) : Promise<Response | void>{
             try{
                 const user_id = request.user.id;
                 const {name, email, password, old_password} = request.body;
